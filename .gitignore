@@ -1,0 +1,9 @@
+/node_modules/
+/dist
+/releases
+/.parcel-cache/
+.env
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
