@@ -1,15 +1,15 @@
 {
   "manifest_version": 2,
-  "name": "deramp mobile",
-  "description": "firefox addon for android enabling instant onramps to crypto",
-  "version": "0.2.4",
+  "name": "Jomo Copilot",
+  "description": "Jomo Copilot observes your session to the target website so Jomo web can then use the session to retrieve your data.",
+  "version": "0.2.5",
   "browser_specific_settings": {
     "gecko": {
-      "id": "mac@mac.com",
+      "id": "contact@jomo.network",
       "strict_min_version": "113.0"
     },
     "gecko_android": {
-      "id": "mac@mac.com",
+      "id": "contact@jomo.network",
       "strict_min_version": "120.0"
     }
   },
@@ -26,20 +26,26 @@
     "default_popup": "popup/index.html"
   },
   "browser_action": {
-    "default_title": "deramp",
+    "default_title": "Jomo Copilot",
     "default_icon": {
       "256": "images/icon256.png"
     },
     "default_popup": "popup/index.html"
   },
   "content_scripts": [
-		{
-			"matches": [ "<all_urls>" ],
-			"js": [ "content/index.js" ]
-    		}
-	],
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content/index.js"
+      ]
+    }
+  ],
   "background": {
-    "scripts": ["background/index.js"]
+    "scripts": [
+      "background/index.js"
+    ]
   },
   "permissions": [
     "webRequest",
@@ -48,7 +54,7 @@
     "<all_urls>"
   ],
   "options_ui": {
-		"browser_style": true,
-		"page": "options/index.html"
-	}
+    "browser_style": true,
+    "page": "options/index.html"
+  }
 }
